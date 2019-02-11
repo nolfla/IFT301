@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<!--Nolan Flatt-->
+
+<html lang="en">
+
+<!--Page information-->
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Homework 5 Forms</title>
+    <meta name="description" content="Homework 5 Froms">
+    <meta name="author" content="Nolan Flatt">
+    <p><b> These are the forms for homework 5.</b></p>
+    <br>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+    </style>
+</head>
+
+<!--Homework 5 Form 1-->
+
+<body>
+
+    <h2>Homework 5 Form 1</h2>
+
+
+
+    <form method="POST" action="https://wilder.azurewebsites.net/echo">
+
+
+        <tr>
+            <td>Name *</td>
+            <td>
+                <input type="text" name="name" size="20" required></td>
+        </tr>
+        <br>
+        <tr>
+            <td>E-mail *</td>
+            <td><input type="text" name="email" size="20" required></td>
+        </tr>
+        <br>
+        <tr>
+            <td>State</td>
+            <td><input type="text" name="state" placeholder="MA" size="20"></td>
+        </tr>
+        <br>
+
+        <tr>
+            <td>Comment</td>
+            <td>
+                <textarea name="comment" placeholder="Enter comment"></textarea></td>
+        </tr>
+
+
+        <p>
+            <input type="submit" value="Submit Comment" name="submit button">
+        </p>
+    </form>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+
+<!--Nolan Flatt-->
+
+<html lang="en">
+
+<!--Page information-->
+
+<head></head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+
+<!--Homework 5 Form 2-->
+
+<body>
+    <br>
+    <br>
+    <h2>Homework 5 Form 2</h2>
+
+    <form method="POST" action="https://wilder.azurewebsites.net/echo">
+        <fieldset>
+            <legend>Custom Computer Parts Requests</legend>
+            <p>
+                <label>Processor Speed</label>
+                <select id="processspeedlist">
+                    <option value="1.3 GHz">1.3 GHz</option>
+                    <option value="1.5 GHz">1.5 GHz</option>
+                    <option value="2.1 GHz">2.1 GHz</option>
+                    <option value="2.4 GHz">2.4 GHz</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label>Memory</label>
+                <select id="memorylist">
+                    <option value="1 GB">1 GB</option>
+                    <option value="2 GB">2 GB</option>
+                    <option value="4 GB">4 GB</option>
+                    <option value="8 GB">8 GB</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label>Monitor Size</label>
+                <select id="monitorsizelist">
+                    <option value="15">15"</option>
+                    <option value="22">22"</option>
+                    <option value="27">27"</option>
+                    <option value="32">32"</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label>Hard Drive</label>
+                <select id="harddrivelist">
+                    <option value="128 GB">128 GB</option>
+                    <option value="240 GB">240 GB</option>
+                    <option value="256 GB">256 GB</option>
+                    <option value="512 GB">512 GB</option>
+                </select>
+
+                <br>
+                <br>
+
+                <label>DVD Burner</label>
+                <select id="dvdburnerlist">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </p>
+
+
+            <tr>
+                <td>Any special requests on your order?</td>
+                <td>
+                    <textarea name="special requests"></textarea></td>
+            </tr>
+
+
+            <p>
+                <input type="submit" value="Send Order" name="submit button">
+            </p>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

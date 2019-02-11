@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classwork 5 Part 1a Form</title>
+
+
+
+    <style type='text/css'>
+        input[type=buttone],
+        input[type=submit],
+        input[type=reset] {
+            background-color: maroon;
+            border: none;
+            color: gold;
+            padding: 15px 30px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        body {
+            color: black;
+            background-color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40pt;
+        }
+
+        fieldset {
+            font-size: 12px;
+            padding: 30px;
+            width: 300px;
+            line-height: 1.8;
+            border: 2px solid gold;
+            -moz-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+        }
+
+        label:hover {
+            cursor: hand;
+        }
+
+        input[type="radio"] {
+            margin-top: -1px;
+            vertical-align: middle;
+        }
+
+        input[type="checkbox"] {
+            margin-top: -1px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <form>
+        <fieldset>
+            <h1>Please Make Your Choice</h1>
+            <div class="form-group">
+                <label for="name"><b>Name</b> </label>
+                <input type="text" class="form-control" id="usr" size="25" maxlength="30">
+            </div>
+            <div class="form-group">
+                <label for="email"><b>Email</b> </label>
+                <input type="email" class="form-control" id="emailaddress" size="25" maxlength="30">
+            </div>
+            <div class="form-group">
+                <label for="message"><b>Message</b> </label>
+                <textarea class="form-control" rows="4" cols="40" id="comment"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="choices"><b><i>Select a Choice</i></b></label>
+                <br>
+                <input type="radio" name="choice_1" value="First Choice" /> First Choice
+                <br>
+                <input type="radio" name="choice_2" value="Second Choice" /> Second Choice
+                <br>
+                <input type="radio" name="choice_3" value="Third Choice" /> Third Choice
+            </div>
+
+            <br>
+
+
+            <div class="form-group">
+                <label for="boxchoices"><b><i>Check all that apply</i></b></label>
+                <br>
+                <input type="checkbox" name="choice_1" value="First Choice"> First Choice
+                <br>
+                <input type="checkbox" name="choice_2" value="Second Choice"> Second Choice
+                <br>
+                <input type="checkbox" name="choice_3" value="Third Choice"> Third Choice
+            </div>
+
+            <br>
+
+
+            <div class="form-group">
+                <b><i>Select a Choice </i></b>
+                <select name="choicelist" form="choice">
+                    <option value="choice_1">First Choice</option>
+                    <option value="choice_2">Second Choice</option>
+                    <option value="choice_3">Third Choice</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input class="btn btn-primary" type="submit" value="Submit Form">
+            </div>
+            <div>
+                <a href="Classwork 5 Part 1.html">Part a to this assignment </a>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

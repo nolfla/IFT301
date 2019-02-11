@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--Nolan Flatt-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classwork 5 Part 2</title>
+
+    <style>
+        .container {
+            position: relative;
+        }
+
+        .topleft {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 18px;
+        }
+
+        .Habitat img {
+            width: 20%;
+            height: auto;
+            opacity: 1.0
+        }
+
+        hr {
+            display: block;
+            height: 5px;
+            border: 0;
+            border-top: 30px solid lightgray;
+            margin: 1em 0;
+            padding: 0;
+        }
+
+        a:link,
+        a:visited {
+            background-color: lightblue;
+            color: purple;
+            padding: 5px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover,
+        a:active {
+            background-color: lightblue;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 100px;
+            position: fixed;
+            z-index: 1;
+            top: 1;
+            left: 0;
+            background-color: lightgray;
+            opacity: 0.7;
+            overflow-x: hidden;
+            padding-top: 10px;
+        }
+
+        body {
+
+            background-image: url("globe.png");
+            background-repeat: no-repeat;
+            background-position: center left;
+            background-attachment: fixed;
+            background-size: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="Habitat">
+            <img src="habitat_logo.png" alt="habitat" width="100" height="20">
+        </div>
+
+        <hr>
+
+        <div class="sidenav" style="width: 15%">
+            <a href="http://www.habitat.org/about">Learn More</a>
+            <br>
+            <br>
+            <a href="http://www.habitat.org/volunteer">Volunteer</a>
+            <br>
+            <br>
+            <a href="http://www.habitat.org/about/advocacy">Advocate</a>
+            <br>
+            <br>
+            <a href="https://www.habitat.org/donate/">Donate</a>
+        </div>
+        <div style="margin-left:15%">
+            <div class="registration">
+                <h1>Registration Form</h1>
+            </div>
+            <p>Habitat for Humanity needs volunteers. Do you want to help? Complete the registration form and join out
+                worldwide fight against substandard housing.</p>
+
+
+            <div class="form-group">
+                <fieldset>
+                    <legend><b>Personal Information</b></legend>
+                    <label><b>Title:</b> <input type="text" name="title" /></label>
+                    <br>
+                    <label><b>First Name:</b> <input type="text" name="fname" /></label>
+                    <br>
+                    <label><b>Last Name:</b> <input type="text" name="lname" /></label>
+                    <br>
+                    <label><b>Date of Birth:</b> <input type="text" name="birthday" /></label>
+                    <br>
+
+                    <div class="form-group">
+                        <label for="message"><b>Best home building skill</b></label>
+                        <br>
+                        <textarea class="form-control" rows="4" cols="40" id="comment"></textarea>
+                    </div>
+                    <fieldset>
+                        <legend><b>Experience</b></legend>
+                        <label><b>Years of Home Building Experience</b></label>
+                        <label for="experience">0</label>
+                        <input type="range" id="experience" name="experience" min="0" max="99" value="10" step="10">
+                        <label for="experience">10+</label>
+                        <br>
+                        <br>
+                        <label><b>Number of Habitat Homes Built: </b><input type="number" name="skill"></label>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="submit" value="Submit Form"> <input type="submit"
+                            value="Submit Form to a New Window">
+                    </fieldset>
+                </fieldset>
+                </fieldset>
+            </div>
+    </form>
+</body>
+
+</html>

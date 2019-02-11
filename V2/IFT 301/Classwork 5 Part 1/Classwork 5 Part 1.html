@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--Nolan Flatt -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classwork 5 Part 1 Form</title>
+
+    <style type='text/css'>
+        body {
+            color: #000000;
+            background-color: #ffffff;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12pt;
+        }
+
+        fieldset {
+            font-size: 12px;
+            padding: 5px;
+            width: 300px;
+            line-height: 1.8;
+        }
+
+        label:hover {
+            cursor: hand;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <h1><b>Customer Information</b></h1>
+
+            <div class="form-group">
+                <label for="name"><b>Name *</b></label>
+                <input type="text" class="form-control" id="usr" size="25" maxlength="30" required>
+            </div>
+
+            <div class="form-group">
+                <b>City</b>
+                <input list="city">
+                <datalist id="city">
+                    <option value="Phoenix">
+                    <option value="Mesa">
+                    <option value="Scottsdale">
+                    <option value="Tempe">
+                    <option value="Chandler">
+                </datalist>
+            </div>
+
+            <div class="form-group">
+                <label for="email"><b>Email *</b></label>
+                <input type="email" class="form-control" id="emailInput" size="25" maxlength="30" required>
+            </div>
+
+            <div class="form-group">
+                <b>Where did you hear about us?</b>
+                <select name="wherelist" form="where">
+                    <option value="internet">Internet</option>
+                    <option value="friend">Friend</option>
+                    <option value="otbusiness">Other Business</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <input class="btn btn-primary" type="submit" value="Submit Form">
+            </div>
+            <br>
+            <br>
+            <br>
+            <div>
+
+                Please use the link below to access the second form for this assignment. <a
+                    href="Classwork 5 Part 1a.html">PartB to this assignment </a>
+
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
